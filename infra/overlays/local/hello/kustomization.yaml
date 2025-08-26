@@ -1,0 +1,4 @@
+resources:
+  - ../../base/apps/hello/deployment.yaml
+  - ../../base/apps/hello/service.yaml
+  - ../../base/apps/hello/ingress.yaml

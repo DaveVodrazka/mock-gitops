@@ -1,0 +1,18 @@
+controller:
+  metrics:
+    enabled: true
+
+server:
+  ingress:
+    enabled: true
+    ingressClassName: nginx
+    hostname: argocd.localhost
+    pathType: Prefix
+    annotations:
+      nginx.ingress.kubernetes.io/ssl-redirect: "false"
+    paths:
+      - /
+
+configs:
+  params:
+    server.insecure: true # allows HTTP instead of HTTPS
