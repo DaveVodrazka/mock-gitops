@@ -11,10 +11,9 @@ spec:
   source:
     repoURL: https://github.com/DaveVodrazka/mock-gitops.git
     targetRevision: HEAD
-    path: infra/argocd/apps
+    path: infra/argocd/apps/prometheus-crds
     directory:
       recurse: false
-    componentParameterOverrides: []
   syncPolicy:
     automated:
       prune: true
