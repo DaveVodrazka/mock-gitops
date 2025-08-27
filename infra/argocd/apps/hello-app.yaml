@@ -8,7 +8,7 @@ spec:
 
   source:
     repoURL: https://github.com/DaveVodrazka/mock-gitops.git
-    targetRevision: HEAD
+    targetRevision: master
     path: infra/overlays/local # Path to your kustomization.yaml
 
   destination:
