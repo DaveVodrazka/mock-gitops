@@ -9,10 +9,10 @@ spec:
     server: https://kubernetes.default.svc
     namespace: monitoring
   source:
-    repoURL: https://prometheus-community.github.io/helm-charts
-    chart: prometheus-operator-crds
-    targetRevision: 23.0.0
-  syncPolicy:
-    automated:
-      prune: true
-      selfHeal: true
+    repoURL: https://github.com/prometheus-community/helm-charts.git
+    path: charts/kube-prometheus-stack/crds/
+    targetRevision: kube-prometheus-stack-31.0.0
+    directory:
+      recurse: true
+    syncOptions:
+      - Replace=true
